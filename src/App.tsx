@@ -93,7 +93,7 @@ export default function App() {
                 Mohammed Waqas NS
               </h1>
               <p className="text-white/60 mb-12 max-w-md text-sm md:text-base leading-relaxed">
-                Architecting robust global supply chain planning & S&OP transformations for Fortune 500 enterprises.
+                Architecting robust global supply chain planning & S&OP transformations for Fortune enterprises.
               </p>
               
               <button 
@@ -145,7 +145,7 @@ export default function App() {
             
             <div className="flex justify-between items-center mb-4 md:mb-6 gap-4">
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold tracking-tight leading-[1.08] md:leading-[1.05]">
-                Mohammed<br className="md:hidden" />Waqas <span className="text-[#0A84FF]">NS</span>
+                Mohammed<br className="md:hidden" /> Waqas <span className="text-[#0A84FF]">N S</span>
               </h1>
               <div className="md:hidden shrink-0">
                 <img 
@@ -201,7 +201,7 @@ export default function App() {
             </p>
 
             <div className="grid grid-cols-2 md:flex md:flex-wrap gap-2 md:gap-3 mt-auto">
-              {['\ud83c\udfc6 Fortune 500 Experience', '\ud83d\udc8a Pharmaceutical', '\ud83d\uded2 Consumer Goods', '\ud83c\udfc5 6+ Certifications'].map((tag) => (
+              {['\ud83c\udfc6 Fortune Experience', '\ud83d\udc8a Pharmaceutical', '\ud83d\uded2 Consumer Goods', '\ud83c\udfc5 6+ Certifications'].map((tag) => (
                 <div key={tag} className="px-2 py-1.5 md:px-4 md:py-2 rounded-full border border-white/10 bg-white/5 text-[10px] md:text-sm font-medium text-white/80 md:shrink-0 flex items-center justify-center text-center">
                   {tag}
                 </div>
