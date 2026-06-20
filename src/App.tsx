@@ -7,15 +7,15 @@ import { Globe2, TrendingUp, Building2, Server, Award, Quote, Search, Blocks, Ma
 
 const testimonials = [
   {
-    quote: "Among the most dedicated professionals I have worked with \u2014 trusted by stakeholders, respected across teams, and relentless in driving complex initiatives to successful outcomes.",
+    quote: "One of the most dedicated and adaptable consultants I have ever worked with \u2014 meticulous in solutioning, configuration, and integration. An invaluable asset to any Kinaxis implementation team.",
     name: "Vishwa Pratap S. Chauhan",
-    role: "Sr. Transformation Leader \u00b7 University of Pittsburgh",
+    role: "Solution Architect \u00b7 Supply Chain Transformation",
     initial: "V"
   },
   {
-    quote: "A trusted professional who combines execution excellence with strong team collaboration, consistently delivering high \u2014 quality outcomes while driving positive change across programs.",
+    quote: "Professional, responsive, and goes the extra mile \u2014 every time. Ensured all Kinaxis best practices were followed for authoring and change management. A great team player I would recommend without hesitation.",
     name: "Sathyanarayana Rao",
-    role: "Supply Chain Leader \u00b7 ISB",
+    role: "Supply Chain Leader \u00b7 Digital Transformation \u00b7 ISB",
     initial: "S"
   }
 ];
@@ -23,23 +23,18 @@ const testimonials = [
 const impacts = [
   {
     icon: Building2,
-    title: "Fortune 500 - FMCG Enterprise",
-    desc: "Architected a strategic planning transformation across 500+ distribution nodes, enabling granular supply planning visibility while improving planning performance by 15%."
+    title: "Fortune 500 - FMCG Leader",
+    desc: "Orchestrated end-to-end supply chain transformation, disaggregating strategic forecasts across 500+ global nodes while accelerating planning throughput by 15%."
   },
   {
     icon: Globe2,
-    title: "Fortune Global 500 - FMCG Enterprise",
-    desc: "Led demand planning transformation across 20+ APAC markets, enabling scalable planning capabilities and consistent decision-making at scale."
+    title: "Fortune Global 500 - FMCG Leader",
+    desc: "Directed large-scale Demand Planning implementations across 15+ European markets, establishing cohesive S&OP methodologies and resilient regional operations."
   },
   {
     icon: Server,
-    title: "Fortune Global 500 - Pharmaceutical Enterprise",
-    desc: "Enabled enterprise-scale deployment across 30+ countries, ensuring operational readiness through disciplined governance, risk mitigation, and successful market adoption."
-  },
-  {
-    icon: Globe2,
-    title: "Global Pharmaceutical Enterprise",
-    desc: "Served as the global point of accountability for supply chain planning operations, ensuring operational continuity and stakeholder confidence across worldwide markets."
+    title: "Fortune Global 500 - Pharma Leader",
+    desc: "Driven global rollout of enterprise architecture across 30+ countries, mitigating launch risks through rigorous SIT governance and hypercare execution."
   }
 ];
 
@@ -93,7 +88,7 @@ export default function App() {
                 Mohammed Waqas NS
               </h1>
               <p className="text-white/60 mb-12 max-w-md text-sm md:text-base leading-relaxed">
-                Architecting robust global supply chain planning & S&OP transformations for Fortune enterprises.
+                Architecting robust global supply chain planning & S&OP transformations for Fortune 500 enterprises.
               </p>
               
               <button 
@@ -145,7 +140,7 @@ export default function App() {
             
             <div className="flex justify-between items-center mb-4 md:mb-6 gap-4">
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold tracking-tight leading-[1.08] md:leading-[1.05]">
-                Mohammed<br className="md:hidden" /> Waqas <span className="text-[#0A84FF]">N S</span>
+                Mohammed<br className="md:hidden" />Waqas <span className="text-[#0A84FF]">NS</span>
               </h1>
               <div className="md:hidden shrink-0">
                 <img 
@@ -201,7 +196,7 @@ export default function App() {
             </p>
 
             <div className="grid grid-cols-2 md:flex md:flex-wrap gap-2 md:gap-3 mt-auto">
-              {['\ud83c\udfc6 Fortune Experience', '\ud83d\udc8a Pharmaceutical', '\ud83d\uded2 Consumer Goods', '\ud83c\udfc5 6+ Certifications'].map((tag) => (
+              {['\ud83c\udfc6 Fortune 500 Experience', '\ud83d\udc8a Pharmaceutical', '\ud83d\uded2 Consumer Goods', '\ud83c\udfc5 6+ Certifications'].map((tag) => (
                 <div key={tag} className="px-2 py-1.5 md:px-4 md:py-2 rounded-full border border-white/10 bg-white/5 text-[10px] md:text-sm font-medium text-white/80 md:shrink-0 flex items-center justify-center text-center">
                   {tag}
                 </div>
