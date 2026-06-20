@@ -3,38 +3,59 @@ import { GlassPanel } from './components/GlassPanel';
 import { StatCard, InfoTile, AnimatedCounter } from './components/Widgets';
 import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
-import { Globe2, TrendingUp, Building2, Server, Award, Quote, Search, Blocks, MapPin, CheckCircle2 } from 'lucide-react';
+import { Globe2, TrendingUp, Building2, Server, Award, Quote, Search, Blocks, MapPin, CheckCircle2, Linkedin } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "One of the most dedicated and adaptable consultants I have ever worked with \u2014 meticulous in solutioning, configuration, and integration. An invaluable asset to any Kinaxis implementation team.",
+    quote: "Among the most dedicated professionals I have worked with \u2014 trusted by stakeholders, respected across teams, and relentless in driving complex initiatives to successful outcomes.",
     name: "Vishwa Pratap S. Chauhan",
-    role: "Solution Architect \u00b7 Supply Chain Transformation",
-    initial: "V"
+    role: "Sr. Transformation Leader \u00b7 University of Pittsburgh",
+    initial: "V",
+    linkedin: "https://www.linkedin.com/in/vpschauhan"
   },
   {
-    quote: "Professional, responsive, and goes the extra mile \u2014 every time. Ensured all Kinaxis best practices were followed for authoring and change management. A great team player I would recommend without hesitation.",
+    quote: "A trusted professional who combines execution excellence with strong team collaboration, consistently delivering high \u2014 quality outcomes while driving positive change across programs.",
     name: "Sathyanarayana Rao",
-    role: "Supply Chain Leader \u00b7 Digital Transformation \u00b7 ISB",
-    initial: "S"
+    role: "Supply Chain Leader \u00b7 ISB",
+    initial: "S",
+    linkedin: "https://www.linkedin.com/in/sathyanarayana-rao-27747670"
+  },
+  {
+    quote: "Recognized for combining domain expertise, execution excellence, and a collaborative approach that enables teams to deliver with confidence.",
+    name: "Vikas Nimbewal",
+    role: "Lead Product Manager \u00b7 IIM",
+    initial: "V",
+    linkedin: "https://www.linkedin.com/in/vikas-nimbewal"
+  },
+   {
+    quote: "Known for taking ownership of critical challenges, delivering impactful outcomes, and building confidence across stakeholders through a composed and results \u2014 oriented approach.",
+    name: "Pankaj Karajagi",
+    role: "Global Supply Chain Manager \u00b7 University at Buffalo",
+    initial: "P",
+    linkedin: "https://www.linkedin.com/in/inpankaj"
   }
 ];
 
 const impacts = [
   {
     icon: Building2,
-    title: "Fortune 500 - FMCG Leader",
-    desc: "Orchestrated end-to-end supply chain transformation, disaggregating strategic forecasts across 500+ global nodes while accelerating planning throughput by 15%."
+    title: "Fortune 500 - FMCG Enterprise",
+    desc: "Architected a strategic planning transformation across 500+ distribution nodes, enabling granular supply planning visibility while improving planning performance by 15%."
   },
   {
     icon: Globe2,
-    title: "Fortune Global 500 - FMCG Leader",
-    desc: "Directed large-scale Demand Planning implementations across 15+ European markets, establishing cohesive S&OP methodologies and resilient regional operations."
+    title: "Fortune Global 500 - FMCG Enterprise",
+    desc: "Led demand planning transformation across 20+ APAC markets, enabling scalable planning capabilities and consistent decision-making at scale."
   },
   {
     icon: Server,
-    title: "Fortune Global 500 - Pharma Leader",
-    desc: "Driven global rollout of enterprise architecture across 30+ countries, mitigating launch risks through rigorous SIT governance and hypercare execution."
+    title: "Fortune Global 500 - Pharmaceutical Enterprise",
+    desc: "Enabled enterprise-scale deployment across 30+ countries, ensuring operational readiness through disciplined governance, risk mitigation, and successful market adoption."
+  },
+  {
+    icon: Globe2,
+    title: "Global Pharmaceutical Enterprise",
+    desc: "Served as the global point of accountability for supply chain planning operations, ensuring operational continuity and stakeholder confidence across worldwide markets."
   }
 ];
 
@@ -85,10 +106,10 @@ export default function App() {
                 <span className="font-display font-semibold tracking-widest text-[#0A84FF] uppercase text-xs">System Online</span>
               </div>
               <h1 className="text-4xl md:text-6xl font-display font-bold tracking-tight mb-6">
-                Mohammed Waqas NS
+                Mohammed Waqas N S
               </h1>
               <p className="text-white/60 mb-12 max-w-md text-sm md:text-base leading-relaxed">
-                Architecting robust global supply chain planning & S&OP transformations for Fortune 500 enterprises.
+                Architecting robust global supply chain planning & S&OP transformations for Fortune enterprises.
               </p>
               
               <button 
@@ -123,7 +144,8 @@ export default function App() {
             <div className="w-2 h-2 rounded-full bg-[#0A84FF] animate-pulse shadow-[0_0_8px_rgba(10,132,255,0.8)] shrink-0" />
             <span className="font-display font-semibold tracking-wide text-sm text-white/90">Supply Chain Consultant</span>
           </div>
-          <a href="mailto:nsmdwaqas@gmail.com" className="px-5 py-2.5 rounded-full bg-[#F5F5F7] text-[#050505] text-[11px] sm:text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-all duration-300">
+          <a href="https://in.linkedin.com/in/nsmdwaqas" target="_blank" rel="noopener noreferrer" className="px-5 py-2.5 rounded-full bg-[#F5F5F7] text-[#050505] text-[11px] sm:text-xs font-bold uppercase tracking-wider hover:opacity-90 transition-all duration-300 flex items-center gap-2">
+            <Linkedin className="w-3.5 h-3.5" />
             Contact Me
           </a>
         </motion.nav>
@@ -140,7 +162,7 @@ export default function App() {
             
             <div className="flex justify-between items-center mb-4 md:mb-6 gap-4">
               <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold tracking-tight leading-[1.08] md:leading-[1.05]">
-                Mohammed<br className="md:hidden" />Waqas <span className="text-[#0A84FF]">NS</span>
+                Mohammed<br className="md:hidden" /> Waqas <span className="text-[#0A84FF]"> N S</span>
               </h1>
               <div className="md:hidden shrink-0">
                 <img 
@@ -196,7 +218,7 @@ export default function App() {
             </p>
 
             <div className="grid grid-cols-2 md:flex md:flex-wrap gap-2 md:gap-3 mt-auto">
-              {['\ud83c\udfc6 Fortune 500 Experience', '\ud83d\udc8a Pharmaceutical', '\ud83d\uded2 Consumer Goods', '\ud83c\udfc5 6+ Certifications'].map((tag) => (
+              {['\ud83c\udfc6 Fortune Experience', '\ud83d\udc8a Pharmaceutical', '\ud83d\uded2 Consumer Goods', '\ud83c\udfc5 6+ Certifications'].map((tag) => (
                 <div key={tag} className="px-2 py-1.5 md:px-4 md:py-2 rounded-full border border-white/10 bg-white/5 text-[10px] md:text-sm font-medium text-white/80 md:shrink-0 flex items-center justify-center text-center">
                   {tag}
                 </div>
@@ -272,12 +294,21 @@ export default function App() {
                     "{testimonials[currentTestimonial].quote}"
                   </p>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-[#0A84FF]/20 border border-[#0A84FF]/30 flex items-center justify-center font-display font-bold text-[#0A84FF]">
+                    <a href={testimonials[currentTestimonial].linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-[#0A84FF]/20 border border-[#0A84FF]/30 flex items-center justify-center font-display font-bold text-[#0A84FF] hover:bg-[#0A84FF]/30 transition-colors shrink-0">
                       {testimonials[currentTestimonial].initial}
-                    </div>
-                    <div>
-                      <div className="text-[13px] sm:text-sm font-bold text-[#F5F5F7]/90">{testimonials[currentTestimonial].name}</div>
-                      <div className="text-[11px] sm:text-xs text-[#F5F5F7]/50">{testimonials[currentTestimonial].role}</div>
+                    </a>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2">
+                        <a href={testimonials[currentTestimonial].linkedin} target="_blank" rel="noopener noreferrer" className="text-[13px] sm:text-sm font-bold text-[#F5F5F7]/90 hover:text-white transition-colors truncate">
+                          {testimonials[currentTestimonial].name}
+                        </a>
+                        <a href={testimonials[currentTestimonial].linkedin} target="_blank" rel="noopener noreferrer" className="text-[#0A84FF] hover:opacity-80 transition-opacity shrink-0">
+                          <Linkedin className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
+                        </a>
+                      </div>
+                      <div className="text-[11px] sm:text-xs text-[#F5F5F7]/50 truncate">
+                        {testimonials[currentTestimonial].role}
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -298,16 +329,12 @@ export default function App() {
                 </div>
               </div>
               <p className="text-xs sm:text-sm text-white/60 leading-relaxed max-w-2xl">
-                Recognized across major professional platforms for Fortune 500 consulting, engineering innovation, and digital supply chain expertise. 
-                Search "nsmdwaqas" to discover the full overview.
+                Discover my digital footprint across professional, search, and AI platforms - reflecting my journey in supply chain transformation, product leadership, and enterprise consulting.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto md:min-w-[340px]">
+            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto md:min-w-[180px]">
                <a href="http://tinyurl.com/nsmdwaqas" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 flex-1 bg-[#0A84FF]/10 text-[#0A84FF] hover:bg-[#0A84FF]/20 transition-colors py-3 px-6 rounded-xl border border-[#0A84FF]/20 text-[13px] sm:text-sm font-medium whitespace-nowrap">
-                  <Search className="w-4 h-4" /> View AI Overview
-               </a>
-               <a href="https://linkedin.com/in/nsmdwaqas" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 flex-1 bg-white/[0.05] hover:bg-white/[0.08] transition-colors py-3 px-6 rounded-xl border border-white/[0.05] text-[13px] sm:text-sm font-medium whitespace-nowrap">
-                  Connect on LinkedIn
+                  <Search className="w-4 h-4" /> Explore
                </a>
             </div>
           </GlassPanel>
