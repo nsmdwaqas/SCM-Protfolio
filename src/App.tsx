@@ -154,22 +154,25 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-4 md:gap-5 auto-rows-min">
           
           {/* HERO SECTION - Span 8 columns */}
-          <GlassPanel className="lg:col-span-8 flex flex-col justify-center min-h-[auto] md:min-h-[380px] p-5 md:p-6 lg:p-10" delay={0.1}>
+          <GlassPanel className="lg:col-span-8 flex flex-col justify-center min-h-[auto] md:min-h-[380px] p-5 md:p-6 lg:p-10 !overflow-visible md:!overflow-hidden" delay={0.1}>
             <div className="flex flex-wrap items-center gap-2 mb-3 md:mb-6">
               <Globe2 className="w-4 h-4 text-[#0A84FF]" />
               <span className="text-[10px] md:text-xs font-semibold tracking-[0.2em] uppercase text-[#0A84FF]">C-Suite Consultant</span>
             </div>
             
-            <div className="flex justify-between items-center mb-4 md:mb-6 gap-4">
-              <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold tracking-tight leading-[1.08] md:leading-[1.05]">
+            <div className="flex justify-between items-center mb-4 md:mb-6 gap-2">
+              <h1 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold tracking-tight leading-[1.08] md:leading-[1.05] relative z-20">
                 Mohammed<br className="md:hidden" /> Waqas <span className="text-[#0A84FF]"> N S</span>
               </h1>
-              <div className="md:hidden shrink-0">
-                <img 
-                  src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghT1Hpa0McaRpYNpkhQaifumnN0QOyXPLn6sM4AUdq_joLXKVcnHNLq48c_7XuqRMIGFizFHjDXz7dHQdbrJieP3kq3PxpeET3C12o74nQCNza9l9PjMrCYcfcpkcQFnkfBhO0hcpyKX7OJge8gZBspP0c_6aL-xbqgDDVubn3HU4cPPJ902KeFY_CIEDU/s1600/nsmdwaqas.jpeg"
-                  alt="Profile"
-                  className="w-20 h-20 rounded-full object-cover border border-white/20"
-                />
+              <div className="md:hidden shrink-0 relative mt-[-10px] mr-[-10px] sm:mr-[-15px]">
+                <div className="absolute inset-0 bg-[#0A84FF]/30 rounded-full blur-2xl animate-pulse" />
+                <div className="relative z-10 p-[2px] bg-gradient-to-tr from-[#0A84FF]/80 via-white/20 to-[#0A84FF]/40 rounded-full shadow-[0_12px_40px_rgba(10,132,255,0.4)]">
+                  <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghT1Hpa0McaRpYNpkhQaifumnN0QOyXPLn6sM4AUdq_joLXKVcnHNLq48c_7XuqRMIGFizFHjDXz7dHQdbrJieP3kq3PxpeET3C12o74nQCNza9l9PjMrCYcfcpkcQFnkfBhO0hcpyKX7OJge8gZBspP0c_6aL-xbqgDDVubn3HU4cPPJ902KeFY_CIEDU/s1600/nsmdwaqas.jpeg"
+                    alt="Profile"
+                    className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-[3px] border-[#0a0a0a]"
+                  />
+                </div>
               </div>
             </div>
 
