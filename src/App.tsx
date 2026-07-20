@@ -168,7 +168,7 @@ export default function App() {
                 <div className="absolute inset-0 bg-[#0A84FF]/30 rounded-full blur-2xl animate-pulse" />
                 <div className="relative z-10 p-[2px] bg-gradient-to-tr from-[#0A84FF]/80 via-white/20 to-[#0A84FF]/40 rounded-full shadow-[0_12px_40px_rgba(10,132,255,0.4)]">
                   <img 
-                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghT1Hpa0McaRpYNpkhQaifumnN0QOyXPLn6sM4AUdq_joLXKVcnHNLq48c_7XuqRMIGFizFHjDXz7dHQdbrJieP3kq3PxpeET3C12o74nQCNza9l9PjMrCYcfcpkcQFnkfBhO0hcpyKX7OJge8gZBspP0c_6aL-xbqgDDVubn3HU4cPPJ902KeFY_CIEDU/s1600/nsmdwaqas.jpeg"
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-4Yv-nJN2yYq437T-8uxsJeXLJGuDqcqFXY5Lvu82ueOi0Z-cVKgTtuaXfRCwUI2AF2wclXUKkDCetbGT9ZtGF-1mtqZdDgXJJFSPAZzdLkSAMUG3ooiJwSuq-ExkqRdYzwxaqW1Iq_ZgdnYZUsUkQNsz5ZVnDTLF-hc74fnD2cqr3W0jmsqF9g1cRg9o/s400/Waqas%20Photo.jpeg"
                     alt="Profile"
                     className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-[3px] border-[#0a0a0a]"
                   />
