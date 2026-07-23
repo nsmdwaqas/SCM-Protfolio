@@ -4,6 +4,8 @@ import { StatCard, InfoTile, AnimatedCounter } from './components/Widgets';
 import { motion, AnimatePresence } from 'motion/react';
 import { useState, useEffect } from 'react';
 import { Globe2, TrendingUp, Building2, Server, Award, Quote, Search, Blocks, MapPin, CheckCircle2, Linkedin } from 'lucide-react';
+import profileImage from '../assets/nsmdwaqas-waqas-chennai-india-Profile.png';
+import desktopImage from '../assets/nsmdwaqas-waqas-chennai-india-banner.png';
 
 const testimonials = [
   {
@@ -168,7 +170,7 @@ export default function App() {
                 <div className="absolute inset-0 bg-[#0A84FF]/30 rounded-full blur-2xl animate-pulse" />
                 <div className="relative z-10 p-[2px] bg-gradient-to-tr from-[#0A84FF]/80 via-white/20 to-[#0A84FF]/40 rounded-full shadow-[0_12px_40px_rgba(10,132,255,0.4)]">
                   <img 
-                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-4Yv-nJN2yYq437T-8uxsJeXLJGuDqcqFXY5Lvu82ueOi0Z-cVKgTtuaXfRCwUI2AF2wclXUKkDCetbGT9ZtGF-1mtqZdDgXJJFSPAZzdLkSAMUG3ooiJwSuq-ExkqRdYzwxaqW1Iq_ZgdnYZUsUkQNsz5ZVnDTLF-hc74fnD2cqr3W0jmsqF9g1cRg9o/s400/Waqas%20Photo.jpeg"
+                    src={profileImage}
                     alt="Profile"
                     className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover border-[3px] border-[#0a0a0a]"
                   />
@@ -233,7 +235,7 @@ export default function App() {
           <GlassPanel className="hidden md:flex lg:col-span-4 p-0 lg:p-0 md:p-0 items-center justify-center min-h-[220px] md:min-h-[380px] group overflow-hidden" delay={0.2}>
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 z-10 transition-opacity duration-500 group-hover:opacity-0" />
             <img 
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7hadg5NCE6x5wVi0D44tjB2lzV2rHikagJdAC2sccORP4oZ9cmRB_P0EBtuXtU2ZEUVWOJc2Q7-UUmjwCOhroWWhpYYW8fCo_adyg6NTBdKSyZnR8iE9_jZDCxGMv3-S2khGUcbNwvIXgUu_9UPqu8J8l726ghq_3El-kDgUWKyDz5_QxkcNxoO-z7oNj/s320/nsmdwaqas-waqas-chennai-india.jpeg" 
+              src={desktopImage} 
               alt="Mohammed Waqas NS"
               className="w-full h-full object-cover scale-[1.02] filter saturate-[0.8] contrast-125 transition-transform duration-700 ease-in-out group-hover:scale-105 group-hover:saturate-100"
             />
